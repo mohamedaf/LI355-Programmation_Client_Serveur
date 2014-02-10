@@ -1,0 +1,66 @@
+Exo1:
+
+open localhost 80
+
+Exo2:
+
+1/ envois requete mnimale GET /
+
+Type document renvoyé HTML.
+
+URL: localhost.
+
+2/Code de retour : 301 (moved permanently).
+Sens: Redirection définitive on nous fournie la bonne adresse pour acceder au site.
+
+3/ Document renvoye: le meme document precedent. 
+Différence en utilisant le protocol HTTP/1.1
+on attend des entetes après avoir envoye la page principale donc on peut envoye le bon
+lien donne par le code d'erreur sans refaire un telnet (ouvrire une nouvelle session) ce 
+qui est obligatoire en HTTP/1.0.
+
+
+Le navigateur se connecte au serveur en envoyant: telnet localhost 80
+puis si le protcole utilisé est HTTP/1.0 il doit se reconnecter à chaque envois d'entete,
+si le protocole utilisé est HTTP/1.1 il doit envoyer ensuite l'entete obligatoire 
+HOST: suivie de l'adresse IP qui est dans ce cas 127.0.0.1 puis peut envoyer d'autres entetes sans
+se reconnecter.
+
+4/Difference:
+
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+
+A cause de la redirection faite telnet localhost 80 donc on a au début du fichier
+la réponse à cette requette.
+
+
+Exo4:
+
+1/Menu: Infos/En-tetes HTTP (reponses).
+12 entetes.
+La durée pendant laquelle ce serveur autorise une nouvelle requête avant de fermer la connexion: 15 sec.
+Requête et en-têtes envoyés par le client pour obtenir cette page: ######.
+
+2/Aucun cookie.
+
+3/ 28 liens.
+Certains liens http d'autres https et d'autres font à des liens d'autres pages du site 'chemain direct' et d'autres
+au lien vers une ancre definie (lien vers une balise de la page actuelle ou une autre page du site) 
+(id d'une balise) on l'a reconnait par le caractère en début #. la plus part d'entre eux servent à acceder à des pages d'un site.
+
+4/Menu Images, afficher les attributs alt. Aucune image n'a un attribut alt.
+
+5/1 formulaire.
+
+7/3 feuilles de styles.
+
+6/Outil de validation W3C.
+
+8/ Beaucoups moins d'erreurs detectees sur Firebug.
+
+9/ Sur Firebug il n'ya pas de commentaires mais on a une meilleure coloration syntaxique.
+
+10/ Quand on clique sur une balise l'element correspondant est colorie, le contenu des balises est cache appuiyer sur une fleche pour demasquer
+donc bonne visibilite.
