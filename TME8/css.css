@@ -1,0 +1,107 @@
+/* <link rel="stylesheet" href="style.css" /> */
+
+h1, em
+{
+    color: blue;
+}
+
+/* class  */
+
+<p class="introduction">Bonjour et bienvenue sur mon site !</p>
+
+.introduction
+{
+    color: blue;
+}
+
+/* id */
+
+<img src="images/logo.png" alt="Logo du site" id="logo" />
+
+#logo
+{  }
+
+<p>Bonjour et <span class="salutations">bienvenue</span> sur mon site !</p>
+
+/* span et div: */
+ 
+-- <span> </span> : c'est une balise de type inline, c'est-à-dire une balise que l'on place au sein d'un paragraphe de texte, pour sélectionner certains mots uniquement. Les balises <strong> et <em> sont de la même famille. Cette balise s'utilise donc au milieu d'un paragraphe et c'est celle dont nous allons nous servir pour colorer « bienvenue ».
+ 
+-- <div> </div> : c'est une balise de type block, qui entoure un bloc de texte. Les balises <p>, <h1>, etc. sont de la même famille. Ces balises ont quelque chose en commun : elles créent un nouveau « bloc » dans la page et provoquent donc obligatoirement un retour à la ligne. <div> est une balise fréquemment utilisée dans la construction d'un design, comme nous le verrons plus tard.
+
+
+
+/* block css */
+ 
+ width : largeur;
+ 
+ height : hauteur;
+ 
+ min-width : largeur minimale ;
+ 
+ min-height : hauteur minimale ;
+ 
+ max-width : largeur maximale ;
+ 
+ max-height : hauteur maximale.
+
+/* marges intérieure et extérieure*/
+
+p
+{
+  width: 350px;
+  border: 1px solid black;
+  text-align: justify;
+  padding: 12px; /* Marge intérieure de 12px */
+  margin: 50px; /* Marge extérieure de 50px */
+}
+
+margin-top : marge extérieure en haut ;
+
+margin-bottom : marge extérieure en bas ;
+
+margin-left : marge extérieure à gauche ;
+
+margin-right : marge extérieure à droite ;
+
+padding-top : marge intérieure en haut ;
+
+padding-bottom : marge intérieure en bas ;
+
+padding-left : marge intérieure à gauche ;
+
+padding-right : marge intérieure à droite ;
+
+/* overflow si on dépasse un bloc à taille définie */
+
+p
+{
+  width: 250px;
+  height: 110px;
+  text-align: justify;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+Si vous voulez que le texte ne dépasse pas des limites du paragraphe, il va falloir utiliser la propriété overflow. Voici les valeurs qu'elle peut accepter :
+
+visible (par défaut) : si le texte dépasse les limites de taille, il reste visible et sort volontairement du bloc.
+
+hidden : si le texte dépasse les limites, il sera tout simplement coupé. On ne pourra pas voir tout le texte.
+
+scroll : là encore, le texte sera coupé s'il dépasse les limites. Sauf que cette fois, le navigateur mettra en place des barres de défilement pour qu'on puisse lire l'ensemble du texte. C'est un peu comme un cadre à l'intérieur de la page.
+
+auto : c'est le mode « pilote automatique ». En gros, c'est le navigateur qui décide de mettre ou non des barres de défilement (il n'en mettra que si c'est nécessaire). C'est la valeur que je conseille d'utiliser le plus souvent.
+
+
+/* word-wrap : couper les textes trop larges */
+
+p
+{
+  word-wrap: break-word;
+}
+
+
+
+
+

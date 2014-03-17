@@ -1,0 +1,43 @@
+ul ul
+{
+    display : none;
+}
+
+.niveau1 > li{    /*tout les fils directs de ul*/
+    display : block;
+    line-height: 200%;
+    width: 10em;
+    border : 0.1em grey solid;
+    text-align: center;
+}
+
+.niveau1 > li:hover .niveau2
+{
+    display : block;
+    background-color : greenyellow;
+    line-height: 150%;
+    width: 10em;
+    border : 0.1em grey solid;
+    text-align: center;
+    position : absolute;
+    margin-left : 10em;
+    margin-top : -2em;
+}
+
+.niveau2 > li:hover .niveau3
+{
+    display : block;
+    background-color : yellow;
+    line-height: 150%;
+    width: 10em;
+    border : 0.1em grey solid;
+    text-align: center;
+    position : absolute;
+    margin-left : 10em;
+    margin-top : -1.64em;
+}
+
+ul, il, a
+{
+    text-decoration: none;
+}
