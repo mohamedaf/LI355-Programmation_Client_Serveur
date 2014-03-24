@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML Basic 1.1//EN"
+"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv='Content-Type' content="text/html; charset=utf-8" />
+    <title> fenetre </title>
+    
+    <script type='text/javascript'><!--...//-->
+        
+        function monProgramme(lien){
+            idfen = window.open(lien,"exercice 1","width=900,height=200,toolbar=no");
+        }
+        
+    </script>
+    <noscript></noscript>
+</head> 
+
+<body>
+    <a href="qui-suis-je.html" onclick="monProgramme(this.href); return false">Ouvrir qui-suis-je.html</a> 
+    <br/>
+    <a href="" onclick="idfen.close()">Fermer qui-suis-je.html</a>
+</body>
+
+</html>

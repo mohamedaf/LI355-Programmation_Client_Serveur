@@ -1,0 +1,36 @@
+1/ Si x et y sont des nombres donc de type Number le résultat est l'addition des deux nombres.
+   Si au moins l'un des deux est une chaîne le résultat et la concaténation de x et y;
+
+2/  add(3,2) => 5
+    add(3,"2") => 32
+    var s ; add(3,s) => 3
+    s=2 ; add(3,s) => 5
+    s="hello" ; add(3,s) => 3hello
+
+3/ 
+
+function toNumber(x){
+    var NaN = isNaN(Number(x);
+    return (!Nan)? Number(x):NaN;
+}
+
+4/
+
+function add(x, y){
+    var nx = toNumber(x);
+    var ny = toNumber(y);
+    
+    if(/^\d$/.test(nx) && ^$d$/.test(nx))
+        return x + y;
+    else if(/^\d$/.test(ny))
+        return nx;
+    else
+        return ny;
+}
+
+5/
+
+code = "a=5+7; b=Math.floor(15.62); c=add(a,b);";
+eval(code);
+alert("a="+a+", b="+b+", c="+c+".");
+

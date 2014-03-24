@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML Basic 1.1//EN"
+"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv='Content-Type' content="text/html; charset=utf-8" />
+    <title> qui-suis-je </title>
+</head> 
+
+<body>
+    <script type='text/javascript'><!--...//-->
+        var ref;
+        
+        if(!(ref = document.referrer)){
+            alert("Referrer Vide");
+        }
+        
+        document.writeln("<ul>\n\
+                            <li>userAgent : "+navigator.userAgent+" </li>\n\
+                            <li>appName : "+navigator.appName+" </li>\n\
+                            <li>appCodeName : "+navigator.appCodeName+" </li>\n\
+                            <li>appVersion : "+navigator.appVersion+" </li>\n\
+                            <li>lastModified : "+document.lastModified+" </li>\n\
+                            <li>location : "+document.location+ " </li>\n\
+                            <li>referrer : "+ref+ " </li>\n\
+                          </ul>\n\
+                          ");
+    </script>
+    <noscript></noscript>
+</body>
+
+</html>
