@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML Basic 1.1//EN"
+"http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+
+<html>
+<head>
+    
+    <meta http-equiv='Content-Type' content="text/html; charset=utf-8" />
+    <title> defilement </title>
+    
+    <script type='text/javascript'>
+        images = new Array("arbre.jpg","OrientExpress.jpg");
+        
+        last = 0;
+        
+        function Activer(){
+            if(last != images.length){
+                last = (last+1)%images.length;
+                document.getElementById("image").setAttribute("src",images[last]);
+                d = setTimeout("Activer()",300);
+            }
+        }
+        
+        function Arreter(){
+            last = images.length;
+        }
+    </script>
+    <noscript></noscript>
+    
+</head>
+    
+    <body>        
+        <img id="image" src="arbre.jpg" width="300" height="300"/>
+        
+        <form method="post" action="">
+        <fieldset>
+            <input type="button" id="Activ" value="Activer" onclick="Activer()"/>
+            <input type="button" id="Arret" value="Arreter" onclick="Arreter();"/>
+        </fieldset>
+    </form>
+        
+    </body>
+</html>
